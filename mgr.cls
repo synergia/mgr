@@ -1032,7 +1032,7 @@
   \fi
   \if@pl
   \renewcommand\bibname{Literatura}
-  \if
+  \fi
 }
 \endinput
 %%
