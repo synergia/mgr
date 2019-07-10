@@ -425,6 +425,8 @@ aliquam imperdiet, ipsum nunc vehicula urna, non ultricies odio odio
 eget dui. Donec venenatis erat a diam. Phasellus vel neque.
 
 
+\cleardoublepage % potrzebne dla poprawnej numeracji stron z bibliografią
+\phantomsection  % potrzebne przy użyciu pakietu hyperref, źródło: https://tex.stackexchange.com/a/23503
 \addcontentsline{toc}{chapter}{\bibname} %utworzenie w
                                              %spisietreści pozycji
                                              %Literatura
@@ -439,7 +441,7 @@ eget dui. Donec venenatis erat a diam. Phasellus vel neque.
 %które zostały wcześniej zacytowane za pomocą \cite{}
 \nocite{*}
 
-%opcjonalnie może się tu pojawić spis rysunków i tabel
+%opcjonalnie może się tu pojawić spis rysunków i tabel 
 % \listoffigures
 % \listoftables
 \end{document}
