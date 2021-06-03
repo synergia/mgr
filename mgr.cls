@@ -419,7 +419,7 @@
 \if@pl
 \newcommand{\@university}{%
   \LARGE  POLITECHNIKA WROC\L{}AWSKA \\[0mm] %
-  WYDZIA\L{} ELEKTRONIKI            %
+  WYDZIA\L{} MECHANICZNY            %
   \vspace{-6mm}%
 }
 \newcommand{\@fieldtext}{\Large\sc Kierunek:}
@@ -482,15 +482,15 @@
 \end{center}\vspace{2cm}\vfill
 \end{minipage}\end{center}
 \end{minipage}\nopagebreak\linebreak
-{\begin{minipage}[c][7.5cm]{7.3cm} %ramka pozycjonująca
-\mbox{}
-%\fbox{My}\hfill\fbox{My}
-%\vfill
-%\fbox{My}\hfill\fbox{My}
-\end{minipage}}
-{\begin{minipage}[c][7.5cm][c]{11.2cm} %ramka z tytułami i autorem, widoczna w okienku okładki
-\begin{center}
-\begin{minipage}[c][7.3cm][c]{10.6cm}
+% {\begin{minipage}[c][7.5cm]{7.3cm} %ramka pozycjonująca
+% \mbox{}
+% %\fbox{My}\hfill\fbox{My}
+% %\vfill
+% %\fbox{My}\hfill\fbox{My}
+% \end{minipage}}
+{\begin{minipage}[c][7.5cm][c]{\textwidth} %ramka z tytułami i autorem, widoczna w okienku okładki
+% \begin{center}
+% \begin{minipage}[c][7.3cm][c]{10.6cm}
 \begin{center}
 \vfil
 \if@pl
@@ -504,21 +504,22 @@
 \large \@title
 \fi
 \vfil
-\@authortext\\
-\large \@author
-\vfil\mbox{}
-\end{center}
-\end{minipage}
+% \end{center}
+% \end{minipage}
 \end{center}
 \end{minipage}}\nolinebreak
 {\begin{minipage}[c][7.5cm]{2.3cm} %ramka pozycjonująca
 \mbox{}
 \end{minipage}}\nopagebreak\linebreak
-{\begin{minipage}[c][9.5cm]{8.4cm} %ramka pozycjonująca
+{\begin{minipage}[c][9.5cm]{11cm} %ramka pozycjonująca
 \mbox{}
 \end{minipage}}
-{\begin{minipage}[c][9.5cm]{12.5cm} %ramka z promotorem i oceną
+{\begin{minipage}[c][9.5cm]{9.9cm} %ramka z promotorem i oceną
 {\begin{minipage}[c][9.5cm]{10cm}
+
+\@authortext\\
+\large \@author
+\vfil\mbox{}
 \vfill
 {\Large\sc \@napisProwadzacy}\\[3mm]
 {\large \@supervisor}\\
